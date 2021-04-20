@@ -34,5 +34,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anastasiia-Yarmilko/goit-react-hw-01-components.git"
+  },
+  "keywords": [],
+  "author": "Anastasiia Yarmilko <anastasiia.yarmilko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anastasiia-Yarmilko/goit-react-hw-01-components/issues"
+  },
+  "homepage": "https://anastasiia-yarmilko.github.io/goit-react-hw-01-components/"
 }
