@@ -3,8 +3,6 @@ import Profile from "./components/Profile";
 import user from "./user.json";
 
 
-// import "./json/user.json";
-
 function App() {
   return (
     <div>
@@ -14,9 +12,9 @@ function App() {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        followers={user.followers}
-        views={user.views}
-        likes={user.likes}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
     </div>
   );

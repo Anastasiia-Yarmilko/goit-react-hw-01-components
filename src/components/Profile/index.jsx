@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import defaultImage from "./defaultImage.png";
-// import users from "./user.json";
+import './index.css';
 
 
 const Profile = ({ name, tag, location, avatar, followers, views, likes }) => (
@@ -38,7 +38,10 @@ Profile.defaultProps = {
     avatar: defaultImage,
     name: "Incognito",
     tag: "Incognito",
-    location: "The whole world"
+    location: "The whole world",
+    followers: 0,
+    views: 0,
+    likes: 0,
 };
 
 Profile.propTypes = {
@@ -46,9 +49,9 @@ Profile.propTypes = {
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-
+    followers: PropTypes.string.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
 };
-
-console.log(Profile);
 
 export default Profile;
