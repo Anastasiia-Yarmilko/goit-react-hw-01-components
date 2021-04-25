@@ -1,0 +1,21 @@
+/* .stat-list {
+  display: flex;
+  padding-left: 0px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+} */
+
+.statistics {
+  display: block;
+  align-content: center;
+  justify-content: center;
+}
+
+/* .label .percentage {
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  width: 100px;
+} */
