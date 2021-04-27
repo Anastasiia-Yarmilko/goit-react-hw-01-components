@@ -25,6 +25,7 @@ Statistics.defaultProps = {
 };
 
 Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
     id: PropTypes.string,
     label: PropTypes.string,
     percentage: PropTypes.number,
