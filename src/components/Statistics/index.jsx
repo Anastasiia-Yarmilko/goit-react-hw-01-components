@@ -1,5 +1,5 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import './index.css';
 
 
@@ -17,5 +17,11 @@ const Statistics = ({ data }) => (
         </ul>
     </section>
 );
+
+Statistics.propTypes = {
+    id: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+};
 
 export default Statistics;
