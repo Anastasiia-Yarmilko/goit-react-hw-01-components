@@ -3,20 +3,26 @@ import PropTypes from "prop-types";
 import './index.css';
 
 
-const Statistics = ({ data }) => (
+const Statistics = ({ title, children, stats }) => {
+    return (
     <section className="statistics">
-        <h2 className="title">Upload stats</h2>
-
+            {title && <h2 className="title"> {title}</h2>}
+            {children}
         <ul className="stat-list">
-            {data.map(({ id, label, percentage }) => (
+            {stats.map(({ id, label, percentage }) => (
                 <li className="item" key={id}>
                     <span className="label">{label}</span>
-                    <span className="percentage">{percentage}</span>
-                 </li>
+                    <span className="percentage">{percentage}%</span>
+                </li>
             ))}
         </ul>
-    </section>
-);
+        </section>
+    )
+};
+    
+Statistics.defaultProps = {
+  title: 'Upload stats',
+};
 
 Statistics.propTypes = {
     id: PropTypes.string,

@@ -1,7 +1,7 @@
 import "./App.css";
 import Profile from "./components/Profile";
 import user from "./json/user.json";
-import data from "./json/statistical-data.json";
+import statisticalData from "./json/statistical-data.json";
 import Statistics from "./components/Statistics";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         likes={user.stats.likes}
       />
       <Statistics
-        data={data}
+        stats={statisticalData}
       />
     </div>
   );
