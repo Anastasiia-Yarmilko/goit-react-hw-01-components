@@ -26,8 +26,8 @@ Statistics.defaultProps = {
 
 Statistics.propTypes = {
     id: PropTypes.string,
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
+    label: PropTypes.string,
+    percentage: PropTypes.number,
 };
 
 export default Statistics;
