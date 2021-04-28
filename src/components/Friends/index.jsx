@@ -1,5 +1,6 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
+import defaultImage from "../Profile/defaultImage.png";
 import './index.css';
 
 const FriendList = ({ friends }) => (
@@ -15,5 +16,18 @@ const FriendList = ({ friends }) => (
         ))}
     </ul>
 );
+
+FriendList.defaultProps = {
+    avatar: defaultImage,
+    name: "Incognito",
+    isOnline: true,
+};
+
+FriendList.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+};
 
 export default FriendList;
