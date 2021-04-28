@@ -10,7 +10,7 @@ const Statistics = ({ title, children, stats }) => {
             {children}
         <ul className="stat-list">
             {stats.map(({ id, label, percentage }) => (
-                <li className="item" key={id}>
+                <li className="item-s" key={id}>
                     <span className="label">{label}</span>
                     <span className="percentage">{percentage}%</span>
                 </li>

@@ -26,13 +26,13 @@
   color: #000;
 }
 
-.item {
+.item-s {
   color: white;
   padding: 10px 15px;
   text-align: center;
   border: 2px solid #fafafa;
   border-radius: 5px;
 }
-.item:not(:last-child) {
+.item-s:not(:last-child) {
   margin-right: 10px;
 }

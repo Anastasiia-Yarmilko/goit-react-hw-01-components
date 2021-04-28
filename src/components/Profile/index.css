@@ -10,8 +10,10 @@
   width: 350px;
 }
 
-.avatar {
+.avatar-p {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .name,
@@ -46,7 +48,7 @@
   justify-content: center;
   border: 1px solid rgb(141, 141, 141);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px 15px;
   margin: 0px 5px;
   width: 65px;
   background-color: rgb(141, 141, 141);
