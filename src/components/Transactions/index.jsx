@@ -1,10 +1,10 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import './index.css';
 
 
 const TransactionHistory = ({ items }) => (
-    <table class="transaction-history">
+    <table className="transaction-history">
         <thead>
             <tr>
             <th>Type</th>
@@ -23,5 +23,18 @@ const TransactionHistory = ({ items }) => (
         ))}
     </table>
 )
+
+TransactionHistory.defaultProps = {
+    type: "Unknown",
+    amount: "0",
+    currency: "Unknown",
+};
+
+TransactionHistory.propTypes = {
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+    id: PropTypes.string,
+};
 
 export default TransactionHistory;
