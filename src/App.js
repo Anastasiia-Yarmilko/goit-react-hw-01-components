@@ -2,9 +2,11 @@ import "./App.css";
 import Profile from "./components/Profile";
 import Statistics from "./components/Statistics";
 import FriendList from "./components/Friends";
+import TransactionHistory from "./components/Transactions";
 import user from "./json/user.json";
 import statisticalData from "./json/statistical-data.json";
 import friends from "./json/friends.json";
+import items from "./json/transactions.json";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
       />
       <FriendList
         friends={friends}
+      />
+      <TransactionHistory
+        items={items}
       />
     </div>
   );
