@@ -40,11 +40,11 @@
 }
 
 .online {
-  background-color: darkgreen;
+  background-color: rgb(6, 135, 139);
 }
 
 .offline {
-  background-color: darkred;
+  background-color: rgb(160, 72, 72);
 }
 
 .avatar {
